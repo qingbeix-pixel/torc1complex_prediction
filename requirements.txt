@@ -1,0 +1,33 @@
+# ============================================================
+# Plant TORC1 Structure Prediction Pipeline — Dependencies
+# ============================================================
+# Core
+numpy>=1.24.0
+pandas>=2.0.0
+biopython>=1.83
+pyyaml>=6.0
+
+# Sequence fetching
+requests>=2.31.0
+
+# Sequence analysis (low-complexity, disorder, transmembrane)
+# IUPred3 for disorder prediction (optional — requires local install or web API)
+# TMHMM (optional — web API or local binary)
+# Pfam/InterProScan for domain annotation
+
+# Structure prediction (choose one)
+# Boltz-2: install via `pip install boltz` (see https://github.com/jwohlwend/boltz)
+# AlphaFold3: see https://github.com/google-deepmind/alphafold3
+
+# Post-prediction analysis
+mdanalysis>=2.6.0
+# freesasa>=2.1.0              # SASA calculation
+
+# Downstream
+# ConSurf: web server only — http://consurf.tau.ac.il
+# FoldX: requires license — http://foldxsuite.crg.eu
+# OpenMM>=8.0 for MD simulations
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0

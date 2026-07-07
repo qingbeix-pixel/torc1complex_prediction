@@ -1,0 +1,7 @@
+# Optional visualization dependencies.
+#
+# Install these in a separate environment if your prediction environment uses
+# numpy<2.0. Recent pymol-open-source builds may require numpy>=2.0, while
+# structure-prediction stacks often pin older numpy versions.
+
+pymol-open-source>=3.2.0a0
